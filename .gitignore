@@ -1,12 +1,9 @@
 GameProject/.vs/
 GameProject/bin/x64Debug/
 GameProject/intermediate/
-GameProject/GameProject/GameProject.vcxproj.filters
 GameProject/GameProject/GameProject.vcxproj.user
 MuffinEngine/.vs/
 MuffinEngine/bin/
 MuffinEngine/Intermediate/
 MuffinEngine/Engine/Engine.vcxproj.user
-MuffinEngine/Engine/Engine.vcxproj.filters
-MuffinEngine/Core/Core.vcxproj.filters
 MuffinEngine/Core/Core.vcxproj.user
