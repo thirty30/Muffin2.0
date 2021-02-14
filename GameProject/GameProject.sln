@@ -6,9 +6,15 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameProject", "GameProject\GameProject.vcxproj", "{6BA37998-BAED-4121-A009-61EAE3843304}"
 	ProjectSection(ProjectDependencies) = postProject
 		{09253A79-3F24-4F73-9585-BD0059640B88} = {09253A79-3F24-4F73-9585-BD0059640B88}
+		{1584DFE7-FA94-4FF3-B367-3BB96FDFF527} = {1584DFE7-FA94-4FF3-B367-3BB96FDFF527}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "..\MuffinEngine\Engine\Engine.vcxproj", "{09253A79-3F24-4F73-9585-BD0059640B88}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1584DFE7-FA94-4FF3-B367-3BB96FDFF527} = {1584DFE7-FA94-4FF3-B367-3BB96FDFF527}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Core", "..\MuffinEngine\Core\Core.vcxproj", "{1584DFE7-FA94-4FF3-B367-3BB96FDFF527}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +40,14 @@ Global
 		{09253A79-3F24-4F73-9585-BD0059640B88}.Release|x64.Build.0 = Release|x64
 		{09253A79-3F24-4F73-9585-BD0059640B88}.Release|x86.ActiveCfg = Release|Win32
 		{09253A79-3F24-4F73-9585-BD0059640B88}.Release|x86.Build.0 = Release|Win32
+		{1584DFE7-FA94-4FF3-B367-3BB96FDFF527}.Debug|x64.ActiveCfg = Debug|x64
+		{1584DFE7-FA94-4FF3-B367-3BB96FDFF527}.Debug|x64.Build.0 = Debug|x64
+		{1584DFE7-FA94-4FF3-B367-3BB96FDFF527}.Debug|x86.ActiveCfg = Debug|Win32
+		{1584DFE7-FA94-4FF3-B367-3BB96FDFF527}.Debug|x86.Build.0 = Debug|Win32
+		{1584DFE7-FA94-4FF3-B367-3BB96FDFF527}.Release|x64.ActiveCfg = Release|x64
+		{1584DFE7-FA94-4FF3-B367-3BB96FDFF527}.Release|x64.Build.0 = Release|x64
+		{1584DFE7-FA94-4FF3-B367-3BB96FDFF527}.Release|x86.ActiveCfg = Release|Win32
+		{1584DFE7-FA94-4FF3-B367-3BB96FDFF527}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -9,16 +9,7 @@
 
 #define WIN32_LEAN_AND_MEAN             // Exclude rarely-used stuff from Windows headers
 
-#define GLEW_STATIC
-#include <GL/glew.h>
-#include <GLFW/glfw3.h>
-
-#include <iostream>
-#include <string>
-#include <map>
-
-using namespace std;
-
-#include "../Core/TypeDefine.h"
+#include "SystemInclude.h"
+#include "TypeDefine.h"
 
 #endif //PCH_H
