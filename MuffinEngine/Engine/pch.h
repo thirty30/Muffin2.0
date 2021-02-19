@@ -9,16 +9,29 @@
 
 #define WIN32_LEAN_AND_MEAN             // Exclude rarely-used stuff from Windows headers
 
+/////////////////////////////////////////////////////////////////////////////////
+
 #define GLEW_STATIC
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
+/////////////////////////////////////////////////////////////////////////////////
+
 #include <iostream>
 #include <string>
 #include <map>
+#include <functional>
+#include <windows.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <fstream>
+#include <sstream>
+#include <Thread>
 
 using namespace std;
 
-#include "../Core/TypeDefine.h"
+/////////////////////////////////////////////////////////////////////////////////
+
+#include "Core/TypeDefine.h"
 
 #endif //PCH_H

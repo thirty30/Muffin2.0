@@ -3,5 +3,5 @@
 class MuffinObject
 {
 public:
-	virtual ~MuffinObject() T_PURE;
+	virtual ~MuffinObject() {};
 };

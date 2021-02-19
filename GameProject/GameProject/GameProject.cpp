@@ -2,8 +2,11 @@
 //
 
 #include <iostream>
+#include "Engine/Muffin.h"
+#include "Test.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    AddComponent<Test>();
+    AddComponent<Camera>();
 }

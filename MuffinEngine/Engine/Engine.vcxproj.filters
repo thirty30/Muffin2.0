@@ -21,10 +21,22 @@
     <ClInclude Include="MuffinEngine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RTTI\MuffinObject.h">
+    <ClInclude Include="RTTI\RTTI.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RTTI\RTTI.h">
+    <ClInclude Include="Camera\Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Muffin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\MuffinWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Basic\MuffinComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Basic\MuffinObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -36,6 +48,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="RTTI\RTTI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\MuffinWindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
