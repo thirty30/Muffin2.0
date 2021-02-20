@@ -20,3 +20,11 @@ public:
 	static MuffinObject* ConstructObject(u64 a_nID);
 };
 
+#define DECLARE_CLASS_RTTI(NAME) \
+	public: \
+		static CRTTIObject _RTTI_##NAME; \
+		static MuffinObject* _RTTI_CreateSelf();
+
+#define IMPLEMENT_CLASS_RTTI(NAME) \
+	CRTTIObject NAME::_RTTI_##NAME(typeid(NAME).hash_code(), NAME::_RTTI_CreateSelf); \
+	MuffinObject* NAME::_RTTI_CreateSelf() { return new NAME(); }

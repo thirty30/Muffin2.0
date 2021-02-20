@@ -4,8 +4,6 @@
 
 class Camera : public MuffinComponent
 {
-public:
-	static CRTTIObject _RTTI_Camera;
-	static MuffinObject* _RTTI_CreateSelf();
+	DECLARE_CLASS_RTTI(Camera)
 };
 

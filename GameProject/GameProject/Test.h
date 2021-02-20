@@ -3,8 +3,5 @@
 
 class Test : public MuffinComponent
 {
-public:
-	static CRTTIObject _RTTI_Test;
-	static MuffinObject* _RTTI_CreateSelf();
+	DECLARE_CLASS_RTTI(Test)
 };
-
