@@ -1,5 +1,27 @@
 #pragma once
 
+#define T_DECLARE_SINGLETON(className)						\
+	public: \
+		static className& GetSingleton() \
+		{ \
+			if (_instance == nullptr) \
+			{\
+				_instance = new className();\
+			}\
+			return *_instance; \
+		} \
+	private: \
+		static className* _instance;\
+		\
+		className() = default; \
+		~className() = default; \
+		className(const className& other) = default; \
+		className& operator= (const className& other) = default;
+
+#define T_IMPLEMENT_SINGLETON(className)						\
+	className* className::_instance = nullptr;
+
+/*
 template<typename T>
 class CSingleton
 {
@@ -27,27 +49,5 @@ public:
 
 #define T_IMPLEMENT_SINGLETON( SingletonClass )\
 	template<> SingletonClass* CSingleton<SingletonClass>::m_pSingleton = NULL;
-
-/*
-#define T_DECLARE_SINGLETON(className)						\
-	public: \
-		static className& GetSingleton() \
-		{ \
-			if (_instance == nullptr) \
-			{\
-				_instance = new className();\
-			}\
-			return *_instance; \
-		} \
-	private: \
-		static className* _instance;\
-		\
-		className() = default; \
-		~className() = default; \
-		className(const className& other) = default; \
-		className& operator= (const className& other) = default;
-
-#define T_IMPLEMENT_SINGLETON(className)						\
-	className* className::_instance = nullptr;
-
 */
+

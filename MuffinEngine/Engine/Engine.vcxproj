@@ -181,6 +181,8 @@
   <ItemGroup>
     <ClInclude Include="Camera\Camera.h" />
     <ClInclude Include="Basic\MuffinComponent.h" />
+    <ClInclude Include="GameObject\GameObject.h" />
+    <ClInclude Include="GameObject\GameObjectManager.h" />
     <ClInclude Include="Muffin.h" />
     <ClInclude Include="Basic\MuffinObject.h" />
     <ClInclude Include="RTTI\RTTI.h" />
@@ -190,6 +192,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Camera\Camera.cpp" />
+    <ClCompile Include="GameObject\GameObject.cpp" />
+    <ClCompile Include="GameObject\GameObjectManager.cpp" />
     <ClCompile Include="RTTI\RTTI.cpp" />
     <ClCompile Include="MuffinEngine.cpp" />
     <ClCompile Include="pch.cpp">

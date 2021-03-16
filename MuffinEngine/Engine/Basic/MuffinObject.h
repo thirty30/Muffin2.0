@@ -5,3 +5,4 @@ class MuffinObject
 public:
 	virtual ~MuffinObject() {};
 };
+
